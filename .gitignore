@@ -1,0 +1,12 @@
+# Unity generated folders and files
+SuperShooter/Library/
+SuperShooter/Temp/
+SuperShooter/Obj/
+SuperShooter/Build/
+SuperShooter/Builds/
+SuperShooter/Logs/
+SuperShooter/UserSettings/
+# OS generated files
+*.DS_Store
+Thumbs.db
+SuperShooter/Library
