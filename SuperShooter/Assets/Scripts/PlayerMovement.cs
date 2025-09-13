@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         movementValue = value.Get<Vector2>() * speed;
     }
 
-    public void onLook(InputValue value)
+    public void OnLook(InputValue value)
     {
         lookValue = value.Get<Vector2>().x * rotationSpeed;
     }
