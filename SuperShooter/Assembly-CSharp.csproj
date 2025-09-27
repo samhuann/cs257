@@ -69,8 +69,11 @@
     <Compile Include="Assets\Scripts\Autodestroy.cs" />
     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Life.cs" />
     <Compile Include="Assets\Scripts\ForwardMovement.cs" />
+    <Compile Include="Assets\ContactDamager.cs" />
     <Compile Include="Assets\Scripts\NotMyFirstScript.cs" />
+    <Compile Include="Assets\ContactDestroyer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
