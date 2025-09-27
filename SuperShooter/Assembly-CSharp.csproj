@@ -67,8 +67,10 @@
   <ItemGroup>
     <Compile Include="Assets\ScoreManager.cs" />
     <Compile Include="Assets\WavesManager.cs" />
+    <Compile Include="Assets\Sight.cs" />
     <Compile Include="Assets\Scripts\PlayerShooting.cs" />
     <Compile Include="Assets\Scripts\Autodestroy.cs" />
+    <Compile Include="Assets\EnemyFSM.cs" />
     <Compile Include="Assets\EnemiesManager.cs" />
     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
