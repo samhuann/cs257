@@ -65,21 +65,35 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2023.2.4f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Autodestroy.cs" />
-    <Compile Include="Assets\Scripts\WaveSpawner.cs" />
-    <Compile Include="Assets\Scripts\Life1.cs" />
-    <Compile Include="Assets\Scripts\EnemyFSM1.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\ForwardMovement.cs" />
-    <Compile Include="Assets\Scripts\Sight.cs" />
-    <Compile Include="Assets\Scripts\EnemiesManager1.cs" />
-    <Compile Include="Assets\Scripts\ContactDestroyer1.cs" />
-    <Compile Include="Assets\Scripts\ScoreOnDeath.cs" />
-    <Compile Include="Assets\Scripts\PlayerShooting.cs" />
-    <Compile Include="Assets\Scripts\ScoreManager1.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\NotMyFirstScript.cs" />
-    <Compile Include="Assets\Scripts\WavesManager.cs" />
+    <Compile Include="Assets\Chapter 11 (CSharp)\Scripts\ExplosionOnDeath.cs" />
+    <Compile Include="Assets\Chapter 06 (CSharp)\Scripts\WaveSpawner.cs" />
+    <Compile Include="Assets\Chapter 07 (CSharp)\Scripts\Life.cs" />
+    <Compile Include="Assets\Chapter 06 (CSharp)\Scripts\PlayerShooting_OldInput.cs" />
+    <Compile Include="Assets\Chapter 11 (CSharp)\Scripts\PlayerShooting_Chapter11.cs" />
+    <Compile Include="Assets\Chapter 08 (CSharp)\Scripts\ContactDamager_Chapter8.cs" />
+    <Compile Include="Assets\Chapter 08 (CSharp)\Scripts\WaveSpawner_Chapter17.cs" />
+    <Compile Include="Assets\Chapter 11 (CSharp)\Scripts\EnemyFSM_Chapter11.cs" />
+    <Compile Include="Assets\Chapter 07 (CSharp)\Scripts\ContactDamager.cs" />
+    <Compile Include="Assets\Chapter 08 (CSharp)\Scripts\ScoreOnDeath.cs" />
+    <Compile Include="Assets\Chapter 06 (CSharp)\Scripts\Autodestroy.cs" />
+    <Compile Include="Assets\Chapter 07 (CSharp)\Scripts\ContactDestroyer.cs" />
+    <Compile Include="Assets\Chapter 08 (CSharp)\Scripts\EnemyManager.cs" />
+    <Compile Include="Assets\Chapter 08 (CSharp)\Scripts\WavesManager.cs" />
+    <Compile Include="Assets\Chapter 06 (CSharp)\Scripts\ForwardMovement.cs" />
+    <Compile Include="Assets\Chapter 06 (CSharp)\Scripts\PlayerMovement_NewInput.cs" />
+    <Compile Include="Assets\Chapter 09 (CSharp)\Scripts\Sight.cs" />
+    <Compile Include="Assets\Chapter 09 (CSharp)\Scripts\EnemyFSM.cs" />
+    <Compile Include="Assets\Chapter 07 (CSharp)\Scripts\PlayerMovement_Chapter7.cs" />
+    <Compile Include="Assets\Chapter 08 (CSharp)\Scripts\ScoreManager.cs" />
+    <Compile Include="Assets\Chapter 08 (CSharp)\Scripts\EnableCursor.cs" />
+    <Compile Include="Assets\Chapter 06 (CSharp)\Scripts\PlayerMovement_OldInput.cs" />
+    <Compile Include="Assets\Chapter 08 (CSharp)\Scripts\WavesGameMode.cs" />
+    <Compile Include="Assets\Chapter 08 (CSharp)\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Chapter 08 (CSharp)\Scripts\Life_Chapter8.cs" />
+    <Compile Include="Assets\Chapter 06 (CSharp)\Scripts\PlayerShooting_NewInput.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Chapter 04\Sci-Fi Styled Modular Pack\Readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1042,12 +1056,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.AI.Navigation">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
@@ -1138,12 +1152,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Collections.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
+    <Reference Include="Unity.VisualEffectGraph.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    <Reference Include="Unity.VisualEffectGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualEffectGraph.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
@@ -1156,6 +1174,10 @@
     </Reference>
     <Reference Include="Unity.AI.Navigation.Updater">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
